@@ -8,13 +8,7 @@ pipeline {
                 '''
             }
         }
-        stage('Push') {
-            steps {
-                sh '''
-                docker-compose push
-                '''
-            }
-        }
+        
         stage('Deploy') {
             steps {
                 sh'''
